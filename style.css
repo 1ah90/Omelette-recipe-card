@@ -18,7 +18,7 @@
 body{
     background-color: var(--backgournd);
     font-size: 14px;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Open Serif" ,sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -26,7 +26,7 @@ body{
 }
 
 .main{
-    width: 600px;
+    max-width: 550px;
     background-color: var(--White);
     border-radius: 28px;
     margin: auto;
@@ -35,11 +35,12 @@ body{
     padding: 40px;
 }
 img{
-    height:250px; 
-    width: 520px;
+    max-height:100%; 
+    max-width: 100%;
     border-radius: 12px;
+    
 }
-@media (max-width:370px) {
+@media (max-width:376px) {
     .card{
         width: 370px;
         padding: 0;
