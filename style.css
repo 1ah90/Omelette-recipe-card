@@ -1,0 +1,161 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone100: hsl(30, 54%, 90%);
+--Stone150: hsl(30, 18%, 87%);
+--Stone600: hsl(30, 10%, 34%);
+--Stone900: hsl(24, 5%, 18%);
+--backgournd:hsl(29, 53%, 90%);
+--Brown800:hsl(14, 45%, 36%);
+--Rose800: hsl(332, 51%, 32%);
+--Rose50: hsl(330, 100%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--backgournd);
+    font-size: 14px;
+    height: 100vh;
+    font-family: "Open Serif" ,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.main{
+    width: 600px;
+    background-color: var(--White);
+    border-radius: 28px;
+    margin: auto;
+}
+.card{
+    padding: 40px;
+}
+img{
+    height:250px; 
+    width: 520px;
+    border-radius: 12px;
+}
+@media (max-width:370px) {
+    .card{
+        width: 370px;
+        padding: 0;
+    }
+    img{
+        border-radius: 0px;
+        width: 370px;
+        margin: auto;
+        height: 200px;
+    }
+    header , section{
+        padding: 20px;
+    }
+
+}
+
+/* start main card header */
+.main .card .recipe{
+    padding: 20px 0 20px ;
+}
+
+.main .card .recipe .title{
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.main .card .recipe p{
+    margin-bottom: 20px;
+    color: var(--Stone600);
+}
+
+
+/* preparation time */
+.main .card .recipe .cooking-time{
+    padding: 20px 20px 0 20px;
+}
+
+.main .card .recipe .cooking-time h4{
+    color: var(--Rose800);
+    padding-bottom: 20px;
+}
+.main .card .recipe .cooking-time ul{
+    padding-left: 20px;
+    color: var(--Stone600);
+}
+
+
+.main .card .recipe .cooking-time li{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.main .card .recipe .cooking-time li span{
+    color: var(--Stone900);
+}
+/* end main card header */
+
+/* start ingredients style */
+
+/* section h2 fot brown titles */
+section h2{
+    color: var(--Brown800);
+    font-weight: 500;
+    padding: 20px 0 20px;
+}
+section div:not(:last-child){
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid hsl(14, 45%, 36%,0.3) 1px;
+
+}
+section ul li{
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: var(--Stone600);
+}
+
+/* start instructioons  */
+section .instuctions ul li{
+    list-style-type: decimal;
+
+}
+
+section ul li span{
+    color: var(--Stone600);
+    font-weight: 600;
+}
+
+/* end instructioons  */
+
+/* start nutriton */
+section .nutriton{
+    padding: 0 0 10px 20px ;
+}
+section .nutriton ul li{
+    display: flex;
+    border-bottom: solid hsl(14, 45%, 36%,0.3) 1px;
+    justify-content: center;
+    padding-bottom: 0;
+}
+section .nutriton .def{
+    margin-bottom: 20px;
+    color: var(--Stone600);
+
+}
+
+section .nutriton ul li p{
+    color: var(--Brown800);
+    font-weight: 100;
+    flex: 1;
+    padding: 10px;
+
+}
+section .nutriton h4{
+    flex: 1;
+    margin: auto;
+    font-family: 400;
+}
+
+
+/* end nutriton */
